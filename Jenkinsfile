@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Notify') {
             steps {
-                notifyZohoSuccess('Kidalo', 'https://kidalo.testing.icitdev.nl')
+                notifyZohoSuccess('Kidalo test was een geintje', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUJcmljayByb2xs')
             }
         }
     }
