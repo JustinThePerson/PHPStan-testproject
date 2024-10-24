@@ -5,9 +5,8 @@ pipeline{
     label 'ubuntu'
   }
   stages{
-
-    stage('Test') {
-      notifyZohoSuccess('Dit is een test', 'https://test.com')
-    }
+  }
+  stage('Test') {
+    notifyZohoSuccess('Dit is een test', 'https://test.com')
   }
 }
