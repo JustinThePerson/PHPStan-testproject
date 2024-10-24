@@ -1,10 +1,13 @@
+@Library('icit-scripts')_
+
 pipeline{
-    agent{
-        label 'ubuntu'
+  agent{
+    label 'ubuntu'
+  }
+  stages{
+
+    stage('Test') {
+      notifyZohoSuccess('Dit is een test', 'https://test.com')
     }
-    stages{
-        stage('Test notification') {
-                notifyZohoSuccess('Dit is een test', 'https://test.com')
-            }
-    }
+  }
 }
